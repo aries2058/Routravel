@@ -1,0 +1,14 @@
+.intro-section{
+    background:url('/images/back0.jpg') no-repeat;
+    background-size: cover;
+}
+#autosearch-list{
+    display: none;
+}
+#autosearch-list.on{
+    display: block;
+}
+#autosearch-list i{
+    margin-right: 8px;
+    color:#FF7777
+}

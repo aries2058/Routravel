@@ -1,0 +1,52 @@
+<$ include ../shared/header $>
+<link rel="stylesheet" href="/css/place.css" />
+
+<div class="container-fluid intro-section">
+    <div class="row">
+        <div class="col mt-5 txt-search-area">
+            <i class="fas fa-search"></i>
+            <input type="text" class="form-control" id="txt-search" placeholder="어디로 떠나볼까요?" />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col mt-5 mb-5">
+            <h2 class="text-white font-weight-bold"><img src="/images/logo_index.png"></h2>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col mt-4">
+            <div class="card w-100">
+                <img src="/images/p01.png" class="card-img-top" alt="망상오토캠핑장">
+                <div class="card-body">
+                  <h5 class="card-title">망상 오토캠핑장</h5>
+                  <p class="card-text">해마다 사람들의 발길이 끊기지 않는 망상해변에서 자연과 어우러져 캠핑을 즐기고 싶다면, 바닷물까지 뛰어드는 데 채 1분이 걸리지 않을 망상 오토캠핑장이 있습니다. 이용객들의 편의를 위하여 급수대와 화장실 및 샤워장 등, 각종 편의시설들이 조성되어 어느 휴양지에서도 느끼지 못하는 즐거운 휴식과 다양한 레저 활동을 접할 수 있습니다.</p>
+                  <a href="#" class="btn btn-primary">여기로 떠나기</a>
+                </div>
+              </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col mt-5">
+            <h5>추천장소</h5>
+        </div>
+    </div>
+    <div class="scrolling-wrapper row flex-row flex-nowrap">
+        <div class="col-5"><img src="/images/back4.jpg" class="img-thumbnail"><p class="text-center">동해</p></div>
+        <div class="col-5"><img src="/images/back1.jpg" class="img-thumbnail"><p class="text-center">서해</p></div>
+        <div class="col-5"><img src="/images/back2.jpg" class="img-thumbnail"><p class="text-center">남해</p></div>
+        <div class="col-5"><img src="/images/back3.jpg" class="img-thumbnail"><p class="text-center">제주</p></div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function(){
+        $('#txt-search').on('click', function(){
+            location.href="/place/search"
+        })
+    })
+</script>
+<$ include ../shared/bottomNav $>
+<$ include ../shared/footer $>

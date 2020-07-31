@@ -1,0 +1,44 @@
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+*{
+  font-family: 'Nanum Gothic', serif;
+}
+.scrolling-wrapper{
+	overflow-x: auto;
+}
+
+#bottomNav{
+  background: #FFF;
+  border-top: solid 1px #EFEFEF;
+}
+#bottomNav a{
+  display: block;
+  width:100%;
+  padding:12px 0px
+}
+
+#bottomNav a i{
+  color:#aaa;  
+}
+
+#bottomNav a.on i{
+  color:#E23444;  
+}
+.txt-search-area{
+  position: relative;
+}
+.txt-search-area i.fa-search{
+  position: absolute;
+  top:12px;
+  left:24px;
+}
+.txt-search-area #txt-search{
+  padding-left: 30px;
+  font-size: 0.95rem;
+}
+#btn-window-close{
+  position: absolute;
+  top:0px;
+  right:8px;
+  display: block;
+  padding:16px;
+}

@@ -1,0 +1,39 @@
+<$ include ../shared/header $>
+<link rel="stylesheet" href="/css/place.css" />
+
+<div class="container-fluid">
+    <a id="btn-window-close"><i class="fas fa-times"></i> 닫기</a>
+    <div class="row">
+        <div class="col mt-5 txt-search-area">
+            <i class="fas fa-search"></i>
+            <input type="text" class="form-control" id="txt-search" placeholder="위치, 명소 또는 주소를 입력하세요." />
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col mt-3">
+            <ul id="autosearch-list" class="list-group list-group-flush">
+                <li class="list-group-item"><i class="fas fa-map-marker-alt"></i> Cras justo odio</li>
+                <li class="list-group-item"><i class="fas fa-map-marker-alt"></i> Dapibus ac facilisis in</li>
+                <li class="list-group-item"><i class="fas fa-map-marker-alt"></i> Morbi leo risus</li>
+                <li class="list-group-item"><i class="fas fa-map-marker-alt"></i> Porta ac consectetur ac</li>
+                <li class="list-group-item"><i class="fas fa-map-marker-alt"></i> Vestibulum at eros</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    $(document).ready(function(){
+        $('#txt-search').on('keypress', function(){
+            if(!$('#autosearch-list').hasClass('on'))
+                $('#autosearch-list').addClass('on');
+        })
+        $('#btn-window-close').on('click', function(){
+           history.back();
+        })
+    })
+</script>
+<$ include ../shared/footer $>
