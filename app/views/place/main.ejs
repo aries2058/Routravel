@@ -1,3 +1,19 @@
 <$ include ../shared/header $>
-<div id="map">여기에지도를붙여봐~~</div>
+<!-- 여기에지도를붙여봐~~ 이거 귀여워요언닠ㅋㅋㅋㅋㅋ -->
+
+<div id="map" style="width:500px;height:400px;"></div>
+<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=7d89662e5d7cff13ff8373eb75f52bb5"></script>
+<!-- services 라이브러리 불러오기 token부분에 사용하고자 하는 라이브러리 적용 -->
+<!-- services와 clusterer, drawing 라이브러리 불러오기 -->
+<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=APIKEY&libraries=services,clusterer,drawing"></script>
+<script>
+    var container = document.getElementById('map');
+    var options = {
+        center: new kakao.maps.LatLng(33.450701, 126.570667),
+        level: 3
+    };
+
+    var map = new kakao.maps.Map(container, options);
+</script>
+
 <$ include ../shared/footer $>

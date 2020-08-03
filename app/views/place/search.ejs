@@ -1,5 +1,17 @@
+<!-- 공통으로 쓰이는 템플릿 -->
 <$ include ../shared/header $>
+
+<!-- public > css 템플릿 -->
 <link rel="stylesheet" href="/css/place.css" />
+
+
+<!-- 
+  routes> place.js
+  router.get('/place/search', function(req, res, next) {
+  res.render('place/search', { title: 'place/search' });
+});
+부분을 타고 view를 호출, 
+api연동과 자동완성 코드 입력필요 -->
 
 <div class="container-fluid">
     <a id="btn-window-close"><i class="fas fa-times"></i> 닫기</a>
@@ -36,4 +48,5 @@
         })
     })
 </script>
+<!-- footer.ejs로 닫아주는구조 -->
 <$ include ../shared/footer $>
