@@ -10,5 +10,9 @@ router.get('/place/search', function(req, res, next) {
   res.render('place/search', { title: 'place/search' });
 });
 
+router.get('/place/main', function(req, res, next) {
+  res.render('place/main', { title: 'place/main' });
+});
+
 
 module.exports = router;
